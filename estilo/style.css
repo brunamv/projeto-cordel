@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background-color: lightblue;
+}
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header>h1{
+    padding: 40px;
+    font-variant: small-caps; /*mantém as letras maiúsculas, porem, menor do que as primeiras. Sem dar impressão de estar gritando.*/
+}
+
+header>p{
+    padding-bottom: 40px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+section{
+    line-height: 2em;
+    padding-left: 40px;
+    padding-bottom: 10%vh;
+}
+
+section.normal{
+    background-color: white;
+    color: black;
+}
+
+section.imagem{
+    color: white;
+    width: 400px;
+}
+
+section.imagem > p {
+    background-color: rgba(0, 0, 0, 0.411);
+}
+
+footer{
+    background-color: black;
+    text-align: center;
+    padding: 5px;
+}
+
+footer>p{
+    color: white;
+}
