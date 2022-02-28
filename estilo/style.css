@@ -1,8 +1,16 @@
 @charset "UTF-8";
 
+/*fonte2*/ @import url('https://fonts.googleapis.com/css2? family= Romanesco & display=swap');
+/*fonte3*/ @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@500&display=swap');
 *{
     padding: 0px;
     margin: 0px;
+}
+
+:root{
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif; /*rodapé*/
+    --fonte2: 'Romanesco', cursive; /*conteudo-poema*/
+    --fonte3: 'League Spartan', sans-serif; /*nome autor*/
 }
 
 body{
@@ -15,12 +23,17 @@ header{
 }
 
 header>h1{
-    padding: 40px;
+    padding-top: 20px;
+    padding-bottom: 15px;
     font-variant: small-caps; /*mantém as letras maiúsculas, porem, menor do que as primeiras. Sem dar impressão de estar gritando.*/
+    font-family: var(--fonte2);
+    font-size: 6vw;
 }
 
 header>p{
     padding-bottom: 40px;
+    font-family: var(--fonte3);
+    font-size: 2.5vw;
 }
 
 a{
@@ -34,9 +47,12 @@ a:hover{
 }
 
 section{
-    line-height: 2em;
+    
     padding-left: 40px;
     padding-bottom: 10%vh;
+    font-family: var(--fonte2);
+    font-style: italic;
+    font-size: 2.5vw;
 }
 
 section.normal{
@@ -61,4 +77,6 @@ footer{
 
 footer>p{
     color: white;
+    font-family: var(--fonte1);
+    font-size: 0.8em;
 }
