@@ -46,27 +46,47 @@ a:hover{
     text-decoration: underline;
 }
 
-section{
-    
+section { 
+    padding-top: 10vh; 
     padding-left: 40px;
     padding-bottom: 10%vh;
+    line-height: 2em;
     font-family: var(--fonte2);
     font-style: italic;
     font-size: 2.5vw;
 }
 
 section.normal{
+    padding-top: 10px;
+    padding-bottom: 10px;
     background-color: white;
     color: black;
+    background-attachment: scroll;
 }
 
 section.imagem{
     color: white;
-    width: 400px;
+    padding: 20px;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.534); /*13px = espalhamento, 0px= ampliação*/
+    background-attachment: fixed;
 }
 
-section.imagem > p {
-    background-color: rgba(0, 0, 0, 0.411);
+
+section.imagem>p{
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.24);
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.644);
+    
+}
+
+section#img01{
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
+}
+
+section#img02{
+    background-image: url('../imagens/background002.jpg');
+    background-position: right center;
 }
 
 footer{
